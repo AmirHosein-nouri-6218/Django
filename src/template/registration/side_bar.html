@@ -1,0 +1,37 @@
+{% load base_tags %}
+<ul class="sidebar-menu" data-widget="tree">
+        <li class="header">منو</li>
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>مقالات</span>
+            <span class="pull-left-container">
+              <i class="fa fa-angle-right pull-left"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="base.html"><i class="fa fa-circle-o"></i>مقالات</a></li>
+            <li><a href="{% url 'account:home' %}"><i class="fa fa-circle-o"></i>لیست مقالات</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="{% url 'account:article-create' %}">
+            <i class="fa fa-files-o"></i>
+            <span>افزودن مقاله</span>
+            <span class="pull-left-container">
+            </span>
+          </a>
+
+        <li class="treeview">
+          <a href="{% url 'account:profile' %}">
+            <i class="fa fa-files-o"></i>
+            <span>پروفایل</span>
+            <span class="pull-left-container">
+            </span>
+          </a>
+
+        </li>
+        <li class="header">برچسب ها</li>
+        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>مهم</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>هشدار</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>اطلاعات</span></a></li>
+      </ul>
